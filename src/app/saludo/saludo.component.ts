@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaludoComponent implements OnInit {
 
-  constructor() { }
+  message: string;
+
+  constructor() { 
+    this.message = 'Un saludo a todos';
+
+    setTimeout( () => {
+      this.message = 'Otro mensaje diferente';
+    }, 3000);
+
+  }
 
   ngOnInit(): void {
+  }
+
+  showGreeting(): string {
+    return 'Saludo desde el método';
   }
 
 }
