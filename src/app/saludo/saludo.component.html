@@ -3,3 +3,6 @@
 <p>{{ message }}</p>
 <p>{{ 1 + 1 }}</p>
 <p>El método me devuelve: {{ showGreeting() }}</p>
+<p id="prefijo-{{ identifParrafo }}-sufijo">Párrafo para modificar atributos</p>
+<p [id]="identifParrafo">Otro parrafo</p>
+<input [type]="identifInput" name="">
