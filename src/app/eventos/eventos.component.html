@@ -7,3 +7,10 @@
 <div class="square" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()">
 	{{ message }}
 </div>
+<input 
+	type="text"
+	(change)="onChangeInput($event)" 
+	(input)="onInput($event)" 
+	(focus)="onFocus($event)" 
+	(blur)="onBlur($event)"
+>

@@ -33,4 +33,20 @@ export class EventosComponent implements OnInit {
     this.message = 'Outside div';
   }
 
+  onChangeInput($event) {
+    // console.log($event.target.value);
+  }
+
+  onInput($event) {
+    this.message = $event.target.value;
+  }
+
+  onFocus($event) {
+    console.log('getting Focus..');
+  }
+
+  onBlur($event) {
+    console.log('lose Focus...');
+  }
+
 }
