@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventosComponent implements OnInit {
 
-  constructor() { }
+  message: string;
+
+  constructor() {
+    this.message = 'This is a initial message';
+  }
 
   ngOnInit(): void {
   }
@@ -19,6 +23,14 @@ export class EventosComponent implements OnInit {
 
   onChange($event) {
     console.log($event.target.value);
+  }
+
+  onMouseEnter() {
+    this.message = 'Inside div';
+  }
+
+  onMouseOut() {
+    this.message = 'Outside div';
   }
 
 }
