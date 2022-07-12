@@ -9,6 +9,7 @@ import { Hijo2Component } from './hijo2/hijo2.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { SumarComponent } from './sumar/sumar.component';
 import { ChronometerComponent } from './chronometer/chronometer.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ChronometerComponent } from './chronometer/chronometer.component';
     Hijo2Component,
     EventosComponent,
     SumarComponent,
-    ChronometerComponent
+    ChronometerComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule
