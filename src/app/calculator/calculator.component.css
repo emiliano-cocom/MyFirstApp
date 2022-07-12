@@ -3,6 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 50px;
+	font-family: Helvetica;
 }
 .container-calculator {
 	background-color: #DBDDDE;
@@ -13,16 +14,18 @@
 	display: grid;
   	grid-template-columns: repeat(1, 1fr);
   	grid-gap: 1px;
-  	grid-auto-rows: 50px;
   	margin-top: 20px;
   	margin-bottom: 25px;
+  	background-color: #ffffff;
 }
-.container-input input {
+.container-input p {
 	color: #000000;
-	font-size: 26px;
 	font-weight: bold;
+	font-size: 36px;
 	border: 0px;
-	text-align: center;
+	text-align: right;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 .container-col-1 {
 	display: grid;
