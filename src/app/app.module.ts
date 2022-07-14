@@ -10,6 +10,7 @@ import { EventosComponent } from './eventos/eventos.component';
 import { SumarComponent } from './sumar/sumar.component';
 import { ChronometerComponent } from './chronometer/chronometer.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     EventosComponent,
     SumarComponent,
     ChronometerComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule

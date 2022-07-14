@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyFirstApp';
+
+  titles: string[];
+
+  constructor() {
+    this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
+  }
 }
