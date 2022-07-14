@@ -13,4 +13,8 @@ export class AppComponent {
   constructor() {
     this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
   }
+
+  onClickAlert($event) {
+    console.log($event);
+  }
 }

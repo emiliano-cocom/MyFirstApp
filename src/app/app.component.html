@@ -1,6 +1,8 @@
-<!--<app-alert [text]="titles[0]" subTitle="Este es el primero"></app-alert>
+<app-alert [text]="titles[0]" subTitle="Este es el primero" (clickAlert)="onClickAlert($event)"></app-alert>
 <app-alert [text]="titles[1]"></app-alert>
-<app-alert [text]="titles[2]" subTitle="Este es el tercero"></app-alert>-->
+<app-alert [text]="titles[2]" subTitle="Este es el tercero" (clickAlert)="onClickAlert($event)"></app-alert>
 
+<!--
 <app-sumar [number_one]="1" [number_two]="43"></app-sumar>
 <app-sumar [number_one]="8" [number_two]="27"></app-sumar>
+-->
