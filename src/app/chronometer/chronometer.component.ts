@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-chronometer',
@@ -7,21 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChronometerComponent implements OnInit {
 
-  time: number;
+  @Input() time: number;
+  count: number;
+
+  @Output() finished: EventEmitter<string>;
 
   constructor() {
-    this.time = 10;
+    this.count = 10;
+    this.finished = new EventEmitter();
   }
 
   ngOnInit(): void {
+    this.count = this.time ? this.time : 10;
   }
 
   startChronometer() {
     let interval = setInterval( () => {
-      this.time--;
-      if(this.time === 0) {
+      this.count--;
+      if(this.count < 0) {
         clearInterval(interval);
-        this.time = 10;
+        this.count = this.time;
+        this.finished.emit('Finaliza el cronómetro con el número ' + this.time);
       }
     }, 1000)
   }

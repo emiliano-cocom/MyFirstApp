@@ -17,4 +17,8 @@ export class AppComponent {
   onClickAlert($event) {
     console.log($event);
   }
+
+  onFinished($event) {
+    console.log($event);
+  }
 }
