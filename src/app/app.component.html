@@ -8,8 +8,15 @@
 <app-sumar [number_one]="1" [number_two]="43"></app-sumar>
 <app-sumar [number_one]="8" [number_two]="27"></app-sumar>
 -->
-
+<!--
 <app-chronometer [time]="8" (finished)="onFinished($event)"></app-chronometer>
 <app-chronometer [time]="2" (finished)="onFinished($event)"></app-chronometer>
 <app-chronometer [time]="12" (finished)="onFinished($event)"></app-chronometer>
 <app-chronometer [time]="6" (finished)="onFinished($event)"></app-chronometer>
+-->
+
+<input type="text" [(ngModel)]="input_text">
+<p>{{ input_text }}</p>
+<p>
+	<button (click)="onClick()">Cambiar valor de variable</button>
+</p>
