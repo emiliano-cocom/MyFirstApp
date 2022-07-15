@@ -20,3 +20,10 @@
 <p>
 	<button (click)="onClick()">Cambiar valor de variable</button>
 </p>
+
+<div>
+	<input type="" [(ngModel)]="person.name">
+	<input type="" [(ngModel)]="person.last_name">
+	<input type="" [(ngModel)]="person.age">
+</div>
+<p>Me llamo {{ person.name }} {{ person.last_name }} y tengo {{ person.age }} años</p>

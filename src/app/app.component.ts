@@ -10,10 +10,12 @@ export class AppComponent {
 
   titles: string[];
   input_text: string;
+  person: any;
 
   constructor() {
     this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
     this.input_text = 'Valor Inicial';
+    this.person = {};
   }
 
   onClickAlert($event) {
