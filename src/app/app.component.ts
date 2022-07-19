@@ -15,11 +15,21 @@ export class AppComponent {
 
   arrHomework: Homework[];
 
+  mainText: string;
+
   constructor() {
     this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
     this.input_text = 'Valor Inicial';
     this.person = {};
     this.arrHomework = [];
+    this.mainText = 'Texto desde el padre';
+  }
+
+  ngOnInit(): void {
+    let cont = 0;
+    setInterval( () => {
+      this.mainText = `Texto ${cont++}`;
+    }, 2000)
   }
 
   onClickAlert($event) {
