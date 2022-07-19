@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Homework } from './models/homework.model';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +13,13 @@ export class AppComponent {
   input_text: string;
   person: any;
 
+  arrHomework: Homework[];
+
   constructor() {
     this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
     this.input_text = 'Valor Inicial';
     this.person = {};
+    this.arrHomework = [];
   }
 
   onClickAlert($event) {
@@ -28,5 +32,10 @@ export class AppComponent {
 
   onClick() {
     this.input_text = 'Valor desde el botón';
+  }
+
+  onCreateHomework($event) {
+    this.arrHomework.push($event);
+    console.log(this.arrHomework)
   }
 }

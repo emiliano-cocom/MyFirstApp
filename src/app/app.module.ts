@@ -12,6 +12,8 @@ import { SumarComponent } from './sumar/sumar.component';
 import { ChronometerComponent } from './chronometer/chronometer.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { AlertComponent } from './alert/alert.component';
+import { FormComponent } from './components/form/form.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AlertComponent } from './alert/alert.component';
     SumarComponent,
     ChronometerComponent,
     CalculatorComponent,
-    AlertComponent
+    AlertComponent,
+    FormComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

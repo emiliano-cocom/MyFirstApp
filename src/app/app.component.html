@@ -14,7 +14,7 @@
 <app-chronometer [time]="12" (finished)="onFinished($event)"></app-chronometer>
 <app-chronometer [time]="6" (finished)="onFinished($event)"></app-chronometer>
 -->
-
+<!--
 <input type="text" [(ngModel)]="input_text">
 <p>{{ input_text }}</p>
 <p>
@@ -27,3 +27,11 @@
 	<input type="" [(ngModel)]="person.age">
 </div>
 <p>Me llamo {{ person.name }} {{ person.last_name }} y tengo {{ person.age }} años</p>
+-->
+
+<div>
+	<app-form (create_homework)="onCreateHomework($event)"></app-form>
+</div>
+<div>
+	<app-list [homeworks]="arrHomework"></app-list>
+</div>
