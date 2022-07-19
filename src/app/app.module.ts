@@ -14,6 +14,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { AlertComponent } from './alert/alert.component';
 import { FormComponent } from './components/form/form.component';
 import { ListComponent } from './components/list/list.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListComponent } from './components/list/list.component';
     CalculatorComponent,
     AlertComponent,
     FormComponent,
-    ListComponent
+    ListComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
