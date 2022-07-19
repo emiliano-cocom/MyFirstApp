@@ -36,4 +36,21 @@
 	<app-list [homeworks]="arrHomework"></app-list>
 </div>
 -->
+<!--
 <app-main [text]="mainText"></app-main>
+-->
+
+<p [ngStyle]="paraghapProperties">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+</p>
+<div>
+	<button (click)="changeColor('v')">Verde</button>
+	<button (click)="changeColor('r')">Rojo</button>
+	<button (click)="changeColor('a')">Amarillo</button>
+</div>
+<div>
+	<input type="text" [(ngModel)]="paraghapProperties.color">
+</div>
+<div>
+	<input type="range" min="12" max="200" step="2" (input)="onInput($event)">
+</div>

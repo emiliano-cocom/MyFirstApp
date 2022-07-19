@@ -17,12 +17,15 @@ export class AppComponent {
 
   mainText: string;
 
+  paraghapProperties: any;
+
   constructor() {
     this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
     this.input_text = 'Valor Inicial';
     this.person = {};
     this.arrHomework = [];
     this.mainText = 'Texto desde el padre';
+    this.paraghapProperties = { color: 'red', fontSize: '24px'};
   }
 
   ngOnInit(): void {
@@ -47,5 +50,23 @@ export class AppComponent {
   onCreateHomework($event) {
     this.arrHomework.push($event);
     console.log(this.arrHomework)
+  }
+
+  changeColor(color: string) {
+    switch (color) {
+      case 'a':
+        this.paraghapProperties.color = 'yellow';
+        break;
+      case 'r':
+        this.paraghapProperties.color = 'red';
+        break;
+      case 'v':
+        this.paraghapProperties.color = 'green';
+        break;
+    }
+  }
+
+  onInput($event) {
+    this.paraghapProperties.fontSize = `${$event.target.value}px`;
   }
 }
