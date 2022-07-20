@@ -39,7 +39,8 @@
 <!--
 <app-main [text]="mainText"></app-main>
 -->
-
+<!-- ng Style -->
+<!--
 <p [ngStyle]="paraghapProperties">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 </p>
@@ -54,5 +55,21 @@
 <div>
 	<input type="range" min="12" max="200" step="2" (input)="onInput($event)">
 </div>
-
+-->
+<!-- ngClass -->
+<!--
 <app-semaforo></app-semaforo>
+-->
+<!-- ngIf (if, then, else)-->
+<!--
+<p *ngIf="show; then mainBlock else elseBlock">Contenido del párrafo</p>
+<ng-template #mainBlock>
+	<p>Contenido del primer párrafo</p>
+</ng-template>
+<ng-template #elseBlock>
+	<p>Contenido del segundo párrafo</p>
+</ng-template>
+-->
+<p *ngIf="show">Contenido del primer párrafo</p>
+<p *ngIf="!show">Contenido del segundo párrafo</p>
+<button (click)="onClickShow()">Mostrar / Ocultar</button>

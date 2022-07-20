@@ -19,6 +19,8 @@ export class AppComponent {
 
   paraghapProperties: any;
 
+  show: boolean;
+
   constructor() {
     this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
     this.input_text = 'Valor Inicial';
@@ -26,6 +28,7 @@ export class AppComponent {
     this.arrHomework = [];
     this.mainText = 'Texto desde el padre';
     this.paraghapProperties = { color: 'red', fontSize: '24px'};
+    this.show = true;
   }
 
   ngOnInit(): void {
@@ -68,5 +71,9 @@ export class AppComponent {
 
   onInput($event) {
     this.paraghapProperties.fontSize = `${$event.target.value}px`;
+  }
+
+  onClickShow() {
+    this.show = !this.show;
   }
 }
