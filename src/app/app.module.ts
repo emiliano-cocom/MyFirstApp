@@ -17,6 +17,7 @@ import { ListComponent } from './components/list/list.component';
 import { MainComponent } from './main/main.component';
 import { SemaforoComponent } from './semaforo/semaforo.component';
 import { BuclesComponent } from './bucles/bucles.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BuclesComponent } from './bucles/bucles.component';
     ListComponent,
     MainComponent,
     SemaforoComponent,
-    BuclesComponent
+    BuclesComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,
