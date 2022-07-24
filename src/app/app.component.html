@@ -28,14 +28,16 @@
 </div>
 <p>Me llamo {{ person.name }} {{ person.last_name }} y tengo {{ person.age }} años</p>
 -->
-<!--
-<div>
-	<app-form (create_homework)="onCreateHomework($event)"></app-form>
+<!-- App To-do -->
+<div class="container">
+	<div class="left">
+		<app-form (create_homework)="onCreateHomework($event)"></app-form>
+	</div>
+	<div class="right">
+		<app-list [homeworks]="arrHomework"></app-list>
+	</div>
 </div>
-<div>
-	<app-list [homeworks]="arrHomework"></app-list>
-</div>
--->
+
 <!--
 <app-main [text]="mainText"></app-main>
 -->
@@ -79,4 +81,6 @@
 <app-bucles></app-bucles>
 -->
 <!-- ngSwitch -->
+<!--
 <app-switch></app-switch>
+-->

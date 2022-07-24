@@ -15,14 +15,12 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showHomeworks() {
-    let result = '<ul>';
-    for(let homework of this.homeworks) {
-      result += `<li>${homework.title} - ${homework.description}</li>`;
-    }
-    result += '</ul>';
+  onClick(homework: Homework) {
+    homework.is_complete = !homework.is_complete;
+  }
 
-    return result;
+  deleteHomework(indice) {
+    this.homeworks.splice(indice, 1);
   }
 
 }

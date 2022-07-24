@@ -1,1 +1,12 @@
-<div [innerHTML]="showHomeworks()"></div>
+<div class="list">
+	<div 
+		class="homework" 
+		*ngFor="let homework of homeworks; let indice = index" 
+		[ngClass]="{ complete: homework.is_complete, incomplete: !homework.is_complete}"
+	>
+		<h3>{{ homework.title }}</h3>
+		<p>{{ homework.description }}</p>
+		<button (click)="onClick(homework)">{{ homework.is_complete ? 'INCOMPLETAR' : 'COMPLETAR'}}</button>
+		<button (click)="deleteHomework(indice)">Borrar</button>	
+	</div>
+</div>
