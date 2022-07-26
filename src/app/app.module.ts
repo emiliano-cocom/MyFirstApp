@@ -20,6 +20,7 @@ import { BuclesComponent } from './bucles/bucles.component';
 import { SwitchComponent } from './switch/switch.component';
 import { ListProductsComponent } from './cash_register/list-products/list-products.component';
 import { CommandComponent } from './cash_register/command/command.component';
+import { UnderlineDirective } from './directives/underline.directive';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CommandComponent } from './cash_register/command/command.component';
     BuclesComponent,
     SwitchComponent,
     ListProductsComponent,
-    CommandComponent
+    CommandComponent,
+    UnderlineDirective
   ],
   imports: [
     BrowserModule,
