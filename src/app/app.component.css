@@ -27,3 +27,11 @@ h1 {
 	width: 30%;
 	padding: 10px;
 }
+
+/* HostBinding */
+.hover {
+	background-color: lightseagreen;
+}
+.noHover {
+	background-color: lightyellow;
+}
