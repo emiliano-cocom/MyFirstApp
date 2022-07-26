@@ -18,6 +18,8 @@ import { MainComponent } from './main/main.component';
 import { SemaforoComponent } from './semaforo/semaforo.component';
 import { BuclesComponent } from './bucles/bucles.component';
 import { SwitchComponent } from './switch/switch.component';
+import { ListProductsComponent } from './cash_register/list-products/list-products.component';
+import { CommandComponent } from './cash_register/command/command.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { SwitchComponent } from './switch/switch.component';
     MainComponent,
     SemaforoComponent,
     BuclesComponent,
-    SwitchComponent
+    SwitchComponent,
+    ListProductsComponent,
+    CommandComponent
   ],
   imports: [
     BrowserModule,

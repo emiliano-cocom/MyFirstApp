@@ -1,0 +1,23 @@
+h3 {
+	text-transform: uppercase;
+	background-color: lightgrey;
+	padding: 10px;
+}
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.product {
+	width: 22%;
+	margin: 5px;
+	border: 1px solid gray;
+	cursor: pointer;
+}
+.product img {
+	width: 100%;
+}
+.product p {
+	margin: 5px auto;
+	text-align: center;
+}

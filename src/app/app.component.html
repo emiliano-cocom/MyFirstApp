@@ -29,6 +29,7 @@
 <p>Me llamo {{ person.name }} {{ person.last_name }} y tengo {{ person.age }} años</p>
 -->
 <!-- App To-do -->
+<!--
 <div class="container">
 	<div class="left">
 		<app-form (create_homework)="onCreateHomework($event)"></app-form>
@@ -37,7 +38,7 @@
 		<app-list [homeworks]="arrHomework"></app-list>
 	</div>
 </div>
-
+-->
 <!--
 <app-main [text]="mainText"></app-main>
 -->
@@ -84,3 +85,26 @@
 <!--
 <app-switch></app-switch>
 -->
+<!-- cash register -->
+<h1>Caja Registradora</h1>
+<div class="container-cash-register">
+	<div class="left">
+		<app-list-products 
+			title="Comida" 
+			[products]="arr_food"
+			(product_selected)="onProductSelected($event)"
+		>
+		</app-list-products>
+		<app-list-products 
+			title="Bebida" 
+			[products]="arr_drink"
+			(product_selected)="onProductSelected($event)"
+		>
+		</app-list-products>
+	</div>
+	<div class="right">
+		<app-command [arr_product]="products_selected"></app-command>
+	</div>	
+</div>
+
+<!--  TODO: voy en el minuto 7:33 del video 62--->
