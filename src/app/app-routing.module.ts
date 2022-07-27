@@ -5,10 +5,12 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'informacion'},
   { path: 'informacion', component: InfoComponent },
   { path: 'about', redirectTo: 'sobre' },
   { path: 'sobre', component: AboutComponent },
-  { path: 'contacto', component: ContactComponent }
+  { path: 'contacto', component: ContactComponent },
+  { path: '**', redirectTo: 'contacto'}
 ];
 
 @NgModule({
