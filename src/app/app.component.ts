@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Homework } from './models/homework.model';
 import { Product } from './models/product.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,7 @@ export class AppComponent {
   arr_drink: Product[];
   products_selected: Product[];
 
-  constructor() {
+  constructor(private router: Router) {
     this.titles = ['Jurassic Park', 'Star Wars', 'Jumanji'];
     this.input_text = 'Valor Inicial';
     this.person = {};
@@ -145,5 +146,11 @@ export class AppComponent {
     }else {
       this.products_selected.push($event);
     }
+  }
+
+  onClickRoute(route: string) {
+    // before homeworks
+    console.log('Se realizan tareas previas');
+    this.router.navigate([route]);
   }
 }

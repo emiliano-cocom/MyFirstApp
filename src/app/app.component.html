@@ -135,3 +135,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<a [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a>
 </div>
 <router-outlet></router-outlet>
+<div class="buttons">
+	<button (click)="onClickRoute('sobre')">Acerca de nosotros</button>
+	<button (click)="onClickRoute('informacion')">Información</button>
+	<button (click)="onClickRoute('contacto')">Contacto</button>
+</div>
