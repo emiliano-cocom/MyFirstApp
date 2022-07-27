@@ -21,6 +21,10 @@ import { SwitchComponent } from './switch/switch.component';
 import { ListProductsComponent } from './cash_register/list-products/list-products.component';
 import { CommandComponent } from './cash_register/command/command.component';
 import { UnderlineDirective } from './directives/underline.directive';
+import { AppRoutingModule } from './app-routing.module';
+import { InfoComponent } from './components/info/info.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +46,15 @@ import { UnderlineDirective } from './directives/underline.directive';
     SwitchComponent,
     ListProductsComponent,
     CommandComponent,
-    UnderlineDirective
+    UnderlineDirective,
+    InfoComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
