@@ -35,3 +35,13 @@ h1 {
 .noHover {
 	background-color: lightyellow;
 }
+
+/* routes */
+.routes {
+	display: flex;
+	flex-direction: column;
+}
+.active {
+	color: red;
+	background-color: lavenderblush;
+}
