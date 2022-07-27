@@ -26,6 +26,9 @@ import { InfoComponent } from './components/info/info.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { EmployeeDetailComponent } from './components/employee-detail/employee-detail.component';
+import { ProjectsComponent } from './components/employees/projects/projects.component';
+import { CurriculumComponent } from './components/employees/curriculum/curriculum.component';
+import { ExperienciesComponent } from './components/employees/experiencies/experiencies.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,10 @@ import { EmployeeDetailComponent } from './components/employee-detail/employee-d
     InfoComponent,
     AboutComponent,
     ContactComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    ProjectsComponent,
+    CurriculumComponent,
+    ExperienciesComponent
   ],
   imports: [
     BrowserModule,
