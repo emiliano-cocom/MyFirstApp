@@ -25,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { InfoComponent } from './components/info/info.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { EmployeeDetailComponent } from './components/employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ContactComponent } from './components/contact/contact.component';
     UnderlineDirective,
     InfoComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
