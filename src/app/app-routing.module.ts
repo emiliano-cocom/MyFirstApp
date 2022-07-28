@@ -8,6 +8,8 @@ import { ProjectsComponent } from './components/employees/projects/projects.comp
 import { ExperienciesComponent } from './components/employees/experiencies/experiencies.component'
 import { CurriculumComponent } from './components/employees/curriculum/curriculum.component';
 import { RandomGuard } from './random.guard';
+import { CashRegisterComponent } from './cash_register/cash_register.component';
+import { CalculatorComponent } from './calculator/calculator.component'
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -22,8 +24,10 @@ const routes: Routes = [
       { path: 'proyectos', component: ProjectsComponent },
       { path: 'experiencia', component: ExperienciesComponent },
       { path: 'curriculum', component: CurriculumComponent }
-    ] 
+    ], 
   },
+  { path: 'caja-registradora', component: CashRegisterComponent },
+  { path: 'calculadora', component: CalculatorComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

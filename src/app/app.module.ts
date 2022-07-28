@@ -29,6 +29,8 @@ import { EmployeeDetailComponent } from './components/employee-detail/employee-d
 import { ProjectsComponent } from './components/employees/projects/projects.component';
 import { CurriculumComponent } from './components/employees/curriculum/curriculum.component';
 import { ExperienciesComponent } from './components/employees/experiencies/experiencies.component';
+import { CashRegisterComponent } from './cash_register/cash_register.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { ExperienciesComponent } from './components/employees/experiencies/exper
     EmployeeDetailComponent,
     ProjectsComponent,
     CurriculumComponent,
-    ExperienciesComponent
+    ExperienciesComponent,
+    CashRegisterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

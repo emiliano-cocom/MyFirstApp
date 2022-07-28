@@ -1,0 +1,23 @@
+<!-- cash register -->
+
+<h1>Caja Registradora</h1>
+<div class="container-cash-register">
+	<div class="left">
+		<app-list-products 
+			title="Comida" 
+			[products]="arr_food"
+			(product_selected)="onProductSelected($event)"
+		>
+		</app-list-products>
+		<app-list-products 
+			title="Bebida" 
+			[products]="arr_drink"
+			(product_selected)="onProductSelected($event)"
+		>
+		</app-list-products>
+	</div>
+	<div class="right">
+		<app-command [arr_product]="products_selected"></app-command>
+	</div>	
+</div>
+
