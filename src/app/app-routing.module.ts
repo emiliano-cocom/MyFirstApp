@@ -9,7 +9,8 @@ import { ExperienciesComponent } from './components/employees/experiencies/exper
 import { CurriculumComponent } from './components/employees/curriculum/curriculum.component';
 import { RandomGuard } from './random.guard';
 import { CashRegisterComponent } from './cash_register/cash_register.component';
-import { CalculatorComponent } from './calculator/calculator.component'
+import { CalculatorComponent } from './calculator/calculator.component';
+import { PersonComponent } from './person/person.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -28,6 +29,7 @@ const routes: Routes = [
   },
   { path: 'caja-registradora', component: CashRegisterComponent },
   { path: 'calculadora', component: CalculatorComponent },
+  { path: 'personas', component: PersonComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

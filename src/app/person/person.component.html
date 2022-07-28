@@ -1,0 +1,18 @@
+<table>
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+			<th>Edad</th>
+			<th>Activo</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let person of persons">
+			<td>{{ person.name }}</td>
+			<td>{{ person.last_name }}</td>
+			<td>{{ person.age }}</td>
+			<td>{{ person.is_active }}</td>
+		</tr>
+	</tbody>
+</table>

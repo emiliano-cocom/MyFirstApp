@@ -31,6 +31,7 @@ import { CurriculumComponent } from './components/employees/curriculum/curriculu
 import { ExperienciesComponent } from './components/employees/experiencies/experiencies.component';
 import { CashRegisterComponent } from './cash_register/cash_register.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PersonComponent } from './person/person.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CurriculumComponent,
     ExperienciesComponent,
     CashRegisterComponent,
-    NavbarComponent
+    NavbarComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,
