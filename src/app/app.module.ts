@@ -32,6 +32,7 @@ import { ExperienciesComponent } from './components/employees/experiencies/exper
 import { CashRegisterComponent } from './cash_register/cash_register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PersonComponent } from './person/person.component';
+import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { PersonComponent } from './person/person.component';
     ExperienciesComponent,
     CashRegisterComponent,
     NavbarComponent,
-    PersonComponent
+    PersonComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,

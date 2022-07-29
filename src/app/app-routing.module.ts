@@ -11,6 +11,7 @@ import { RandomGuard } from './random.guard';
 import { CashRegisterComponent } from './cash_register/cash_register.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { PersonComponent } from './person/person.component';
+import { ListaComponent } from './lista/lista.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'caja-registradora', component: CashRegisterComponent },
   { path: 'calculadora', component: CalculatorComponent },
   { path: 'personas', component: PersonComponent },
+  { path: 'lista-personas', component: ListaComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

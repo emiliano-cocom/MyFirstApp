@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Person } from '../models/person.model';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
+
 export class PersonsService {
 
   persons: Person[];
@@ -19,5 +18,9 @@ export class PersonsService {
 
   getAll() {
     return this.persons;
+  }
+
+  create(person: Person) {
+    this.persons.push(person);
   }
 }
