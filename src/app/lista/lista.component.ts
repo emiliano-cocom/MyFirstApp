@@ -24,4 +24,22 @@ export class ListaComponent implements OnInit {
     this.personsService.create(new Person('Juan', 'García', 45, true));
   }
 
+  async filterActivePersons() {
+
+    // then catch
+    /*
+    this.personsService.actives()
+      .then( response => console.log(response))
+      .catch(error => console.log(error));
+    */
+
+    // async await
+    try {
+      this.persons = await this.personsService.activesV2();
+    }catch(error) {
+      console.log(error);
+    }
+    
+  }
+
 }

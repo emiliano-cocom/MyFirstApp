@@ -23,4 +23,25 @@ export class PersonsService {
   create(person: Person) {
     this.persons.push(person);
   }
+
+  actives(): Promise<Person[]> {
+    const promise = new Promise<Person[]>((resolve, reject) => {
+      const arrTemp: Person[] = [];
+      for(let person of this.persons) {
+        if(person.is_active) {
+          arrTemp.push(person);
+        }
+      }
+      resolve(arrTemp);
+    });
+    return promise;
+  }
+
+  activesV2(): Promise<Person[]> {
+    return new Promise<Person[]>((resolve, reject) => {
+      resolve(this.persons.filter( person => person.is_active ))
+    });
+  }
+
+
 }
