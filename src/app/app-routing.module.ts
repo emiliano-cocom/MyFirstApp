@@ -12,6 +12,8 @@ import { CashRegisterComponent } from './cash_register/cash_register.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { PersonComponent } from './person/person.component';
 import { ListaComponent } from './lista/lista.component';
+import { ListaEscritoresComponent } from './lista-escritores/lista-escritores.component';
+import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -32,6 +34,8 @@ const routes: Routes = [
   { path: 'calculadora', component: CalculatorComponent },
   { path: 'personas', component: PersonComponent },
   { path: 'lista-personas', component: ListaComponent },
+  { path: 'escritores', component: ListaEscritoresComponent },
+  { path: 'escritores/:escritorId', component: DetalleEscritorComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

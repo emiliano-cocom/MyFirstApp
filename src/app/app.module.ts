@@ -33,6 +33,8 @@ import { CashRegisterComponent } from './cash_register/cash_register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PersonComponent } from './person/person.component';
 import { ListaComponent } from './lista/lista.component';
+import { ListaEscritoresComponent } from './lista-escritores/lista-escritores.component';
+import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { ListaComponent } from './lista/lista.component';
     CashRegisterComponent,
     NavbarComponent,
     PersonComponent,
-    ListaComponent
+    ListaComponent,
+    ListaEscritoresComponent,
+    DetalleEscritorComponent
   ],
   imports: [
     BrowserModule,
