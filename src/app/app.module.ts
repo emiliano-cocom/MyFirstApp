@@ -36,6 +36,8 @@ import { ListaComponent } from './lista/lista.component';
 import { ListaEscritoresComponent } from './lista-escritores/lista-escritores.component';
 import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.component';
 import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
+import { TemplateComponent } from './template/template.component';
+import { ModelComponent } from './model/model.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +73,9 @@ import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
     ListaComponent,
     ListaEscritoresComponent,
     DetalleEscritorComponent,
-    ListaLibrosComponent
+    ListaLibrosComponent,
+    TemplateComponent,
+    ModelComponent
   ],
   imports: [
     BrowserModule,

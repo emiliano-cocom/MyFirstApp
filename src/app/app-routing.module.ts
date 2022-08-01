@@ -15,6 +15,8 @@ import { ListaComponent } from './lista/lista.component';
 import { ListaEscritoresComponent } from './lista-escritores/lista-escritores.component';
 import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.component';
 import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
+import { TemplateComponent } from './template/template.component';
+import { ModelComponent } from './model/model.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -43,6 +45,8 @@ const routes: Routes = [
       { path: 'libros', component: ListaLibrosComponent }
     ]
   },
+  { path: 'template', component: TemplateComponent },
+  { path: 'model', component: ModelComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 
