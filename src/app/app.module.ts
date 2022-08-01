@@ -35,6 +35,7 @@ import { PersonComponent } from './person/person.component';
 import { ListaComponent } from './lista/lista.component';
 import { ListaEscritoresComponent } from './lista-escritores/lista-escritores.component';
 import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.component';
+import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.co
     PersonComponent,
     ListaComponent,
     ListaEscritoresComponent,
-    DetalleEscritorComponent
+    DetalleEscritorComponent,
+    ListaLibrosComponent
   ],
   imports: [
     BrowserModule,

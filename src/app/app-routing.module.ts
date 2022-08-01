@@ -14,6 +14,7 @@ import { PersonComponent } from './person/person.component';
 import { ListaComponent } from './lista/lista.component';
 import { ListaEscritoresComponent } from './lista-escritores/lista-escritores.component';
 import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.component';
+import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -35,7 +36,13 @@ const routes: Routes = [
   { path: 'personas', component: PersonComponent },
   { path: 'lista-personas', component: ListaComponent },
   { path: 'escritores', component: ListaEscritoresComponent },
-  { path: 'escritores/:escritorId', component: DetalleEscritorComponent },
+  { 
+    path: 'escritores/:escritorId', 
+    component: DetalleEscritorComponent,
+    children: [
+      { path: 'libros', component: ListaLibrosComponent }
+    ]
+  },
   { path: '**', redirectTo: 'contacto'}
 ];
 
