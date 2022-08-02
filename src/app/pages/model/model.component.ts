@@ -29,7 +29,9 @@ export class ModelComponent implements OnInit {
       edad: new FormControl('', [
         this.edadValidator
       ]),
-      dni: new FormControl(''),
+      dni: new FormControl('', [
+        this.dniValidator
+      ]),
       password: new FormControl(''),
       repite_password: new FormControl(''),
       email: new FormControl('', [
@@ -56,6 +58,27 @@ export class ModelComponent implements OnInit {
     }else {
       return { edadValidator: {max, min} };
     }
+  }
+
+  dniValidator(formControl) {
+    const value = formControl.value;
+    const letras = 'TRWAGMYFPDXBMJZSQVHLCKET';
+
+    if(/^\d{8}[a-zA-Z]$/.test(value)) {
+      const numero = value.substr(0, value.length - 1);
+      const letra = value.charAt(value.length - 1);
+      
+      const calculo = numero % 23;
+      const letraSeleccionada = letras.charAt(calculo);
+      if(letra.toUpperCase() == letraSeleccionada) {
+        return null;
+      }else {
+        return { dnivalidator: 'La letra no coincide con el número'};
+      }   
+    }else {
+      return { dnivalidator: 'El dni no tiene buen formato'};
+    }
+    
   }
 
 }
