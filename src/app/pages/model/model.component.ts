@@ -26,7 +26,9 @@ export class ModelComponent implements OnInit {
       apellidos: new FormControl('', [
         Validators.maxLength(10)
       ]),
-      edad: new FormControl(''),
+      edad: new FormControl('', [
+        this.edadValidator
+      ]),
       dni: new FormControl(''),
       password: new FormControl(''),
       repite_password: new FormControl(''),
@@ -41,6 +43,19 @@ export class ModelComponent implements OnInit {
 
   onSubmit() {
     console.log(this.formulario.value);
+  }
+
+  edadValidator(formControl) {
+    const value =  formControl.value;
+
+    const max = 65;
+    const min = 18;
+
+    if(value >= 18 && value <= 65) {
+      return null;
+    }else {
+      return { edadValidator: {max, min} };
+    }
   }
 
 }
