@@ -10,6 +10,13 @@ export class ModelComponent implements OnInit {
 
   formulario: FormGroup;
 
+  /*
+  * valid -- invalid
+  * pristine -- dirty
+  * untouched -- touched
+  *
+  */
+
   constructor() {
     this.formulario = new FormGroup({
       nombre: new FormControl('', [
