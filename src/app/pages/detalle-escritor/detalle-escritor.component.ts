@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { EscritoresService } from '../services/escritores.service';
-import { Escritor } from '../models/escritor.model';
+import { EscritoresService } from '../../services/escritores.service';
+import { Escritor } from '../../models/escritor.model';
 
 @Component({
   selector: 'app-detalle-escritor',

@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InfoComponent } from './components/info/info.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { EmployeeDetailComponent } from './components/employee-detail/employee-detail.component';
-import { ProjectsComponent } from './components/employees/projects/projects.component';
-import { ExperienciesComponent } from './components/employees/experiencies/experiencies.component'
-import { CurriculumComponent } from './components/employees/curriculum/curriculum.component';
+import { InfoComponent } from './pages/components/info/info.component';
+import { AboutComponent } from './pages/components/about/about.component';
+import { ContactComponent } from './pages/components/contact/contact.component';
+import { EmployeeDetailComponent } from './pages/components/employee-detail/employee-detail.component';
+import { ProjectsComponent } from './pages/components/employees/projects/projects.component';
+import { ExperienciesComponent } from './pages/components/employees/experiencies/experiencies.component'
+import { CurriculumComponent } from './pages/components/employees/curriculum/curriculum.component';
 import { RandomGuard } from './random.guard';
-import { CashRegisterComponent } from './cash_register/cash_register.component';
-import { CalculatorComponent } from './calculator/calculator.component';
-import { PersonComponent } from './person/person.component';
-import { ListaComponent } from './lista/lista.component';
-import { ListaEscritoresComponent } from './lista-escritores/lista-escritores.component';
-import { DetalleEscritorComponent } from './detalle-escritor/detalle-escritor.component';
-import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
-import { TemplateComponent } from './template/template.component';
-import { ModelComponent } from './model/model.component';
+import { CashRegisterComponent } from './pages/cash_register/cash_register.component';
+import { CalculatorComponent } from './pages/calculator/calculator.component';
+import { PersonComponent } from './pages/person/person.component';
+import { ListaComponent } from './pages/lista/lista.component';
+import { ListaEscritoresComponent } from './pages/lista-escritores/lista-escritores.component';
+import { DetalleEscritorComponent } from './pages/detalle-escritor/detalle-escritor.component';
+import { ListaLibrosComponent } from './pages/lista-libros/lista-libros.component';
+import { TemplateComponent } from './pages/template/template.component';
+import { ModelComponent } from './pages/model/model.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},

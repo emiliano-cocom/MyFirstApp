@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EscritoresService } from '../services/escritores.service';
-import { Escritor } from '../models/escritor.model';
+import { EscritoresService } from '../../services/escritores.service';
+import { Escritor } from '../../models/escritor.model';
 
 @Component({
   selector: 'app-lista-escritores',

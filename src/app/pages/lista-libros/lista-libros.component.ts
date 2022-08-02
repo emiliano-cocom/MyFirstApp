@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LibrosService } from '../services/libros.service';
-import { Libro } from '../models/libro.model'; 
+import { LibrosService } from '../../services/libros.service';
+import { Libro } from '../../models/libro.model'; 
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

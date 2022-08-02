@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Homework } from '../../models/homework.model';
+import { Homework } from '../../../models/homework.model';
 
 @Component({
   selector: 'app-list',

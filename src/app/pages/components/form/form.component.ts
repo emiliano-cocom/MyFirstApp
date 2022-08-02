@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Homework } from '../../models/homework.model';
+import { Homework } from '../../../models/homework.model';
 
 @Component({
   selector: 'app-form',
