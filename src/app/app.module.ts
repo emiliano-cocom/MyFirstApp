@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
+/* Routing */
+import { AppRoutingModule } from './app-routing.module';
+
+/* Directives*/
+import { UnderlineDirective } from './directives/underline.directive';
+
+/* Components */
 import { AppComponent } from './app.component';
 import { SaludoComponent } from './pages/saludo/saludo.component';
 import { PadreComponent } from './pages/padre/padre.component';
@@ -20,8 +28,6 @@ import { BuclesComponent } from './pages/bucles/bucles.component';
 import { SwitchComponent } from './pages/switch/switch.component';
 import { ListProductsComponent } from './pages/cash_register/list-products/list-products.component';
 import { CommandComponent } from './pages/cash_register/command/command.component';
-import { UnderlineDirective } from './directives/underline.directive';
-import { AppRoutingModule } from './app-routing.module';
 import { InfoComponent } from './pages/components/info/info.component';
 import { AboutComponent } from './pages/components/about/about.component';
 import { ContactComponent } from './pages/components/contact/contact.component';
@@ -38,6 +44,7 @@ import { DetalleEscritorComponent } from './pages/detalle-escritor/detalle-escri
 import { ListaLibrosComponent } from './pages/lista-libros/lista-libros.component';
 import { TemplateComponent } from './pages/template/template.component';
 import { ModelComponent } from './pages/model/model.component';
+import { ListPostsComponent } from './pages/list-posts/list-posts.component';
 
 @NgModule({
   declarations: [
@@ -75,13 +82,15 @@ import { ModelComponent } from './pages/model/model.component';
     DetalleEscritorComponent,
     ListaLibrosComponent,
     TemplateComponent,
-    ModelComponent
+    ModelComponent,
+    ListPostsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
