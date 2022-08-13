@@ -18,6 +18,7 @@ import { ListaLibrosComponent } from './pages/lista-libros/lista-libros.componen
 import { TemplateComponent } from './pages/template/template.component';
 import { ModelComponent } from './pages/model/model.component';
 import { ListPostsComponent } from './pages/list-posts/list-posts.component';
+import { EventosComponent } from './pages/eventos/eventos.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: 'template', component: TemplateComponent },
   { path: 'model', component: ModelComponent },
   { path: 'posts', component: ListPostsComponent },
+  { path: 'eventos', component: EventosComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

@@ -15,4 +15,8 @@ export class PostsService {
   getAll(): Promise<any[]> {
     return this.httpClient.get<any[]>(this.baseUrl).toPromise();
   }
+
+  getById(id: number): Promise<any> {
+    return this.httpClient.get<any>(`${this.baseUrl}/${id}`).toPromise();
+  }
 }

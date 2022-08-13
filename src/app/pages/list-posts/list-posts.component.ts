@@ -18,4 +18,13 @@ export class ListPostsComponent implements OnInit {
       .catch(errors => console.log(errors));
   }
 
+  async onClick(postId) {
+    try {
+      const post = await this.postsService.getById(postId);
+      console.log(post);
+    }catch(error) {
+      console.log(error);
+    } 
+  }
+
 }
