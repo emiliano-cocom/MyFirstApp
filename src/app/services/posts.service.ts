@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,14 @@ export class PostsService {
 
   create({title, body, userId}): Promise<any> {
     const bodyRequest = { title, body, userId };
-    return this.httpClient.post<any>(this.baseUrl, bodyRequest).toPromise();
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json; charset=UTF-8'
+      })
+    };
+
+    return this.httpClient.post<any>(this.baseUrl, bodyRequest, httpOptions).toPromise();
   }
 
   update({id, title, body, userId}): Promise<any> {
