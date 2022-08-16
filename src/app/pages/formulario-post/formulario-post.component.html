@@ -1,0 +1,16 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="title" class="form-label">Titulo</label>
+    <input type="text" class="form-control" id="title" formControlName="title">
+  </div>
+  <div class="mb-3">
+    <label for="body" class="form-label">Cuerpo</label>
+    <input type="text" class="form-control" id="body" formControlName="body">
+  </div>
+  <div class="mb-3">
+    <label for="userId" class="form-label">User ID</label>
+    <input type="text" class="form-control" id="userId" formControlName="userId">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

@@ -45,6 +45,7 @@ import { ListaLibrosComponent } from './pages/lista-libros/lista-libros.componen
 import { TemplateComponent } from './pages/template/template.component';
 import { ModelComponent } from './pages/model/model.component';
 import { ListPostsComponent } from './pages/list-posts/list-posts.component';
+import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { ListPostsComponent } from './pages/list-posts/list-posts.component';
     ListaLibrosComponent,
     TemplateComponent,
     ModelComponent,
-    ListPostsComponent
+    ListPostsComponent,
+    FormularioPOSTComponent
   ],
   imports: [
     BrowserModule,
