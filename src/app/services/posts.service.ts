@@ -24,4 +24,12 @@ export class PostsService {
     const bodyRequest = { title, body, userId };
     return this.httpClient.post<any>(this.baseUrl, bodyRequest).toPromise();
   }
+
+  update({id, title, body, userId}): Promise<any> {
+    return this.httpClient.put(`${this.baseUrl}/${id}`, {id, title, body, userId}).toPromise();
+  }
+
+  delete(id): Promise<any> {
+    return this.httpClient.delete(`${this.baseUrl}/${id}`).toPromise();
+  }
 }

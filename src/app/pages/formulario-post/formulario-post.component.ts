@@ -31,4 +31,20 @@ export class FormularioPOSTComponent implements OnInit {
     }
   }
 
+  onClickUpdate() {
+    this.postsSvc.update({
+      id: 5,
+      title: 'Nuevo Título',
+      body: 'Nuevo cuerpo para el post',
+      userId: 3
+    }).then(response => console.log(response))
+      .catch(errors => console.log(errors));
+  }
+
+  onClickDelete() {
+    this.postsSvc.delete(5)
+    .then(response => console.log(response))
+    .catch(errors => console.log(errors));
+  }
+
 }
