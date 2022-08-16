@@ -3,7 +3,7 @@ h1 {
 	text-align: center;
 }
 .container-cash-register {
-	width: 70%;
+	width: 100%;
 	margin:  30px auto 0 auto;
 	display: flex;
 }

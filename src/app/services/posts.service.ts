@@ -19,4 +19,9 @@ export class PostsService {
   getById(id: number): Promise<any> {
     return this.httpClient.get<any>(`${this.baseUrl}/${id}`).toPromise();
   }
+
+  create({title, body, userId}): Promise<any> {
+    const bodyRequest = { title, body, userId };
+    return this.httpClient.post<any>(this.baseUrl, bodyRequest).toPromise();
+  }
 }

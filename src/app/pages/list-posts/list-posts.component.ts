@@ -27,4 +27,13 @@ export class ListPostsComponent implements OnInit {
     } 
   }
 
+  onClickPost() {
+    this.postsService.create({
+      title: 'Nuevo título',
+      body: 'Este es el cuerpo del post',
+      userId: 1
+    }).then(response => console.log(response))
+      .catch(errors => console.log(errors));
+  }
+
 }
