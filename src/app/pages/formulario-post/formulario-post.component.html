@@ -1,5 +1,5 @@
 <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-  <div class="mb-3">
+  <div class="mb-3 mt-3">
     <label for="title" class="form-label">Titulo</label>
     <input type="text" class="form-control" id="title" formControlName="title">
   </div>
@@ -12,5 +12,7 @@
     <input type="text" class="form-control" id="userId" formControlName="userId">
   </div>
   
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <div>
+  	<button type="submit" class="btn btn-primary float-end">Enviar</button>
+  </div>
 </form>
