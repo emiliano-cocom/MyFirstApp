@@ -20,6 +20,7 @@ import { ModelComponent } from './pages/model/model.component';
 import { ListPostsComponent } from './pages/list-posts/list-posts.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post.component';
+import { PaisesComponent } from './pages/paises/paises.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -53,6 +54,7 @@ const routes: Routes = [
   { path: 'posts', component: ListPostsComponent },
   { path: 'eventos', component: EventosComponent },
   { path: 'formulario-post', component: FormularioPOSTComponent },
+  { path: 'paises', component: PaisesComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

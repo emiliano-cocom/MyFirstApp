@@ -1,0 +1,9 @@
+<div class="row justify-content-center mt-2">
+	<div class="card m-1" style="width: 22rem;" *ngFor="let pais of paises">
+	  <img [src]="pais.flag" class="card-img-top img-fluid" alt="...">
+	  <div class="card-body">
+	    <h5 class="card-title">{{ pais.translations['es'] }}</h5>
+	    <p class="card-text">Capital: {{ pais.capital }}</p>
+	  </div>
+	</div>
+</div>

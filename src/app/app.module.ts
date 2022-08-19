@@ -46,6 +46,7 @@ import { TemplateComponent } from './pages/template/template.component';
 import { ModelComponent } from './pages/model/model.component';
 import { ListPostsComponent } from './pages/list-posts/list-posts.component';
 import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post.component';
+import { PaisesComponent } from './pages/paises/paises.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post
     TemplateComponent,
     ModelComponent,
     ListPostsComponent,
-    FormularioPOSTComponent
+    FormularioPOSTComponent,
+    PaisesComponent
   ],
   imports: [
     BrowserModule,
