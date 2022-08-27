@@ -21,6 +21,7 @@ import { ListPostsComponent } from './pages/list-posts/list-posts.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post.component';
 import { PaisesComponent } from './pages/paises/paises.component';
+import { RickyAndMortyComponent } from './pages/ricky-and-morty/ricky-and-morty.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -55,6 +56,7 @@ const routes: Routes = [
   { path: 'eventos', component: EventosComponent },
   { path: 'formulario-post', component: FormularioPOSTComponent },
   { path: 'paises', component: PaisesComponent },
+  { path: 'ricky-and-morty', component: RickyAndMortyComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

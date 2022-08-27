@@ -47,6 +47,7 @@ import { ModelComponent } from './pages/model/model.component';
 import { ListPostsComponent } from './pages/list-posts/list-posts.component';
 import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post.component';
 import { PaisesComponent } from './pages/paises/paises.component';
+import { RickyAndMortyComponent } from './pages/ricky-and-morty/ricky-and-morty.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { PaisesComponent } from './pages/paises/paises.component';
     ModelComponent,
     ListPostsComponent,
     FormularioPOSTComponent,
-    PaisesComponent
+    PaisesComponent,
+    RickyAndMortyComponent
   ],
   imports: [
     BrowserModule,
