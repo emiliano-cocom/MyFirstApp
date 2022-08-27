@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -49,6 +49,12 @@ import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post
 import { PaisesComponent } from './pages/paises/paises.component';
 import { RickyAndMortyComponent } from './pages/ricky-and-morty/ricky-and-morty.component';
 
+/* register locale */
+import localeEs from '@angular/common/locales/es';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEs);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -98,7 +104,9 @@ import { RickyAndMortyComponent } from './pages/ricky-and-morty/ricky-and-morty.
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID, useValue: 'es-ES'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
