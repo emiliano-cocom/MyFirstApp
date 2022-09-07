@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  constructor() { }
+  //DatePipe
+  currentDate: Date;
+
+  constructor() {
+    this.currentDate = new Date();
+  }
 
   ngOnInit(): void {
   }
