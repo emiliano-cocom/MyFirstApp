@@ -13,9 +13,17 @@ export class InfoComponent implements OnInit {
   //PercentPipe
   randomNumber: number;
 
+  // JSONPipe
+  student: any;
+
   constructor() {
     this.currentDate = new Date();
     this.randomNumber = Math.random();
+    this.student = {
+      nombre: 'José',
+      apellidos: 'Cocom',
+      notas: [3,4,7,10]
+    }
   }
 
   ngOnInit(): void {
