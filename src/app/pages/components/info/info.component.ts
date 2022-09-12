@@ -16,6 +16,9 @@ export class InfoComponent implements OnInit {
   // JSONPipe
   student: any;
 
+  // LowerCasePipe, UpperCasePipe, TitleCasePipe
+  text: string;
+
   constructor() {
     this.currentDate = new Date();
     this.randomNumber = Math.random();
@@ -23,7 +26,8 @@ export class InfoComponent implements OnInit {
       nombre: 'José',
       apellidos: 'Cocom',
       notas: [3,4,7,10]
-    }
+    };
+    this.text = 'En un lugar de la Mancha';
   }
 
   ngOnInit(): void {
