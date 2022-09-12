@@ -13,3 +13,11 @@
 <p>{{ text | lowercase }}</p>
 <p>{{ text | uppercase }}</p>
 <p>{{ text | titlecase }}</p>
+
+<ul>
+	<li *ngFor="let animal of animals | slice:min:max">{{ animal }}</li>
+</ul>
+<input type="range" min="0" [max]="animals.length" step="1" [(ngModel)]="min">
+<input type="range" min="0" [max]="animals.length" step="1" [(ngModel)]="max">
+
+<p>{{ long_text | slice:0:30 }}</p>
