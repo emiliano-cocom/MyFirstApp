@@ -53,6 +53,7 @@ import { RickyAndMortyComponent } from './pages/ricky-and-morty/ricky-and-morty.
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { ReversoPipe } from './pipes/reverso.pipe';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 registerLocaleData(localeEs);
 
@@ -97,7 +98,8 @@ registerLocaleData(localeEs);
     FormularioPOSTComponent,
     PaisesComponent,
     RickyAndMortyComponent,
-    ReversoPipe
+    ReversoPipe,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
