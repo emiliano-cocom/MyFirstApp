@@ -52,6 +52,7 @@ import { RickyAndMortyComponent } from './pages/ricky-and-morty/ricky-and-morty.
 /* register locale */
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { ReversoPipe } from './pipes/reverso.pipe';
 
 registerLocaleData(localeEs);
 
@@ -95,7 +96,8 @@ registerLocaleData(localeEs);
     ListPostsComponent,
     FormularioPOSTComponent,
     PaisesComponent,
-    RickyAndMortyComponent
+    RickyAndMortyComponent,
+    ReversoPipe
   ],
   imports: [
     BrowserModule,
