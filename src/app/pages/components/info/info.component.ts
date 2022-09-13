@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostsService } from '../../../services/posts.service';
 
 @Component({
   selector: 'app-info',
@@ -25,7 +26,11 @@ export class InfoComponent implements OnInit {
   max: number;
   long_text: string;
 
-  constructor() {
+  // AsyncPipe
+  prom: Promise<string>;
+  promPost: Promise<any[]>;
+
+  constructor(private postsSvc: PostsService) {
     this.currentDate = new Date();
     this.randomNumber = Math.random();
     this.student = {
@@ -38,6 +43,10 @@ export class InfoComponent implements OnInit {
     this.min = 0;
     this.max = this.animals.length;
     this.long_text = 'Su población es 99 % urbana y en 2020 se población se censó en 9 209 944 habitantes';
+    this.prom = new Promise((resolve, reject) => {
+      setTimeout(() => resolve('Se resuelve la promesa pasados 4 segundos'), 4000)
+    });
+    this.promPost = this.postsSvc.getAll();
   }
 
   ngOnInit(): void {

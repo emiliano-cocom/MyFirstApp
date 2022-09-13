@@ -21,3 +21,11 @@
 <input type="range" min="0" [max]="animals.length" step="1" [(ngModel)]="max">
 
 <p>{{ long_text | slice:0:30 }}</p>
+
+<p>Mensaje: {{ prom | async }}</p>
+
+<ul>
+	<li *ngFor="let post of promPost | async">
+		{{ post.title }}
+	</li>
+</ul>
