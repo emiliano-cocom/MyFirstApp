@@ -54,6 +54,7 @@ import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { ReversoPipe } from './pipes/reverso.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { NumToArrayPipe } from './pipes/num-to-array.pipe';
 
 registerLocaleData(localeEs);
 
@@ -99,7 +100,8 @@ registerLocaleData(localeEs);
     PaisesComponent,
     RickyAndMortyComponent,
     ReversoPipe,
-    CapitalizePipe
+    CapitalizePipe,
+    NumToArrayPipe
   ],
   imports: [
     BrowserModule,
