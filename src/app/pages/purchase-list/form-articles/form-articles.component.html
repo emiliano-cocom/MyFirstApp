@@ -1,0 +1,33 @@
+<div class="card m-1 border border-2" style="width: 23rem">
+	<div class="card-body">
+		<div class="mb-3">
+			<label>Nombre</label>
+			<input 
+				class="form-control" 
+				type="text" 
+				[(ngModel)]="article.name"
+			>
+		</div>
+		<div class="mb-3">
+			<label>Cantidad: {{ article.quantity }}</label>
+			<input 
+				class="form-range" 
+				type="range" min="0" 
+				max="15" step="1" 
+				[(ngModel)]="article.quantity"
+			>
+		</div>
+		<div class="mb-3">
+			<label>Departamento</label>
+			<select class="form-select" [(ngModel)]="article.department">
+				<option value="carniceria">Carnicería</option>
+				<option value="fruteria">Frutería</option>
+				<option value="hogar">Hogar</option>
+				<option value="panaderia">Panadería</option>
+			</select>
+		</div>
+	</div>
+	<div class="card-footer d-grid gap-2">
+		<button class="btn btn-primary" (click)="sendArticle()">Enviar</button>
+	</div>
+</div>

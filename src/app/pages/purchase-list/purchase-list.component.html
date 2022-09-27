@@ -1,0 +1,26 @@
+<div class="d-flex justify-content-center mb-3 mt-3">
+	<app-form-articles 
+		(articleCreated)="articleCreated($event)"
+	>
+	</app-form-articles>
+</div>
+<div class="row">
+	<div class="col-6">
+		<app-articles 
+			[articles]="selectedArticles"
+			[textButton]="'Comprar'"
+			[title]="'Productos Seleccionados'"
+			(purchaseArticle)="purchaseArticle($event)"
+		>
+		</app-articles>
+	</div>
+	<div class="col-6">
+		<app-articles 
+			[articles]="purchasedArticles"
+			[textButton]="'Devolver'"
+			[title]="'Productos Comprados'"
+			(purchaseArticle)="returnArticle($event)"
+		>
+		</app-articles>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+<div class="row justify-content-center">
+	<h5 class="text-center mb-2">{{ title }}</h5>
+	<div 
+		class="card m-1 border border-2 p-0" 
+		style="width: 17rem" 
+		*ngFor="let article of articles; let indice = index;"
+	>
+		<div class="card-body">
+			<h5 class="card-title">{{ article.name }}</h5>
+			<p class="card-text">Cantidad: {{ article.quantity }}</p>
+			<p class="card-text">Departamento: {{ article.department }}</p>
+		</div>
+		<div class="card-footer d-grid gap-2">
+			<button
+				class="btn btn-primary"
+				(click)="buyArticle(indice)"
+			>{{ textButton }}
+			</button>
+		</div>
+	</div>
+</div>

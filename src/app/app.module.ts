@@ -55,6 +55,9 @@ import { registerLocaleData } from '@angular/common';
 import { ReversoPipe } from './pipes/reverso.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { NumToArrayPipe } from './pipes/num-to-array.pipe';
+import { PurchaseListComponent } from './pages/purchase-list/purchase-list.component';
+import { ArticlesComponent } from './pages/purchase-list/articles/articles.component';
+import { FormArticlesComponent } from './pages/purchase-list/form-articles/form-articles.component';
 
 registerLocaleData(localeEs);
 
@@ -101,7 +104,10 @@ registerLocaleData(localeEs);
     RickyAndMortyComponent,
     ReversoPipe,
     CapitalizePipe,
-    NumToArrayPipe
+    NumToArrayPipe,
+    PurchaseListComponent,
+    ArticlesComponent,
+    FormArticlesComponent
   ],
   imports: [
     BrowserModule,
