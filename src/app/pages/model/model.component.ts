@@ -24,17 +24,25 @@ export class ModelComponent implements OnInit {
         Validators.minLength(3)
       ]),
       apellidos: new FormControl('', [
+        Validators.required,
         Validators.maxLength(10)
       ]),
       edad: new FormControl('', [
+        Validators.required,
         this.edadValidator
       ]),
       dni: new FormControl('', [
+        Validators.required,
         this.dniValidator
       ]),
-      password: new FormControl(''),
-      repite_password: new FormControl(''),
+      password: new FormControl('', [
+        Validators.required
+      ]),
+      repite_password: new FormControl('', [
+        Validators.required
+      ]),
       email: new FormControl('', [
+        Validators.required,
         Validators.pattern(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)
       ])
     })
@@ -43,7 +51,12 @@ export class ModelComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit() {
+  onSubmit(): void {
+    if(this.formulario.invalid) {
+      this.formulario.markAllAsTouched();
+      return;
+    }
+    
     console.log(this.formulario.value);
   }
 
