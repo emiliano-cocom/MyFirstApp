@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-model',
@@ -49,6 +50,10 @@ export class ModelComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const emailControl = this.formulario.controls['email'];
+    emailControl.valueChanges.pipe(debounceTime(500)).subscribe(value => {
+      console.log(value);
+    });
   }
 
   onSubmit(): void {
