@@ -23,6 +23,9 @@ import { FormularioPOSTComponent } from './pages/formulario-post/formulario-post
 import { PaisesComponent } from './pages/paises/paises.component';
 import { RickyAndMortyComponent } from './pages/ricky-and-morty/ricky-and-morty.component';
 import { PurchaseListComponent } from './pages/purchase-list/purchase-list.component';
+import { EmployeeFormComponent } from './pages/Employee/employee-form/employee-form.component';
+import { EmployeeListComponent } from './pages/Employee/employee-list/employee-list.component';
+import { EmployeeComponent } from './pages/Employee/employee.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -59,6 +62,13 @@ const routes: Routes = [
   { path: 'paises', component: PaisesComponent },
   { path: 'ricky-and-morty', component: RickyAndMortyComponent },
   { path: 'lista-compras', component: PurchaseListComponent },
+  { path: 'employee',
+    component: EmployeeComponent,
+    children: [
+      { path: 'new', component: EmployeeFormComponent },
+      { path: 'list', component: EmployeeListComponent},
+    ]
+  },
   { path: '**', redirectTo: 'contacto'}
 ];
 

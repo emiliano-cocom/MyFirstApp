@@ -58,6 +58,9 @@ import { NumToArrayPipe } from './pipes/num-to-array.pipe';
 import { PurchaseListComponent } from './pages/purchase-list/purchase-list.component';
 import { ArticlesComponent } from './pages/purchase-list/articles/articles.component';
 import { FormArticlesComponent } from './pages/purchase-list/form-articles/form-articles.component';
+import { EmployeeFormComponent } from './pages/Employee/employee-form/employee-form.component';
+import { EmployeeListComponent } from './pages/Employee/employee-list/employee-list.component';
+import { EmployeeComponent } from './pages/Employee/employee.component';
 
 registerLocaleData(localeEs);
 
@@ -107,7 +110,10 @@ registerLocaleData(localeEs);
     NumToArrayPipe,
     PurchaseListComponent,
     ArticlesComponent,
-    FormArticlesComponent
+    FormArticlesComponent,
+    EmployeeFormComponent,
+    EmployeeListComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
