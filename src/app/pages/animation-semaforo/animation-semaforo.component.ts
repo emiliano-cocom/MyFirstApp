@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-animation-semaforo',
@@ -21,9 +21,17 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       transition('rojo => amarillo', animate(500)),
       transition('amarillo => verde', animate(1000)),
       transition('verde => rojo', animate('.5s ease-in')),
+      /* transicion para que aparezca desplazandose
       transition('void => *', [
         style({ 'transform': 'translateX(-100%)'}),
         animate(1000)
+      ])*/
+      transition('void => *', [
+        animate(500, keyframes([
+          style({ opacity: 0, transform: 'translateX(-100%)', offset: 0 }),
+          style({ opacity: 1, transform: 'translateX(200px)', offset: 0.7 }),
+          style({ opacity: 1, transform: 'translateX(0)', offset: 1 }),
+        ]))
       ])
     ])
   ]
