@@ -26,6 +26,7 @@ import { PurchaseListComponent } from './pages/purchase-list/purchase-list.compo
 import { EmployeeFormComponent } from './pages/Employee/employee-form/employee-form.component';
 import { EmployeeListComponent } from './pages/Employee/employee-list/employee-list.component';
 import { EmployeeComponent } from './pages/Employee/employee.component';
+import { AnimationSemaforoComponent } from './pages/animation-semaforo/animation-semaforo.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'informacion'},
@@ -69,6 +70,7 @@ const routes: Routes = [
       { path: 'list', component: EmployeeListComponent},
     ]
   },
+  { path: 'animation-semaforo', component: AnimationSemaforoComponent },
   { path: '**', redirectTo: 'contacto'}
 ];
 

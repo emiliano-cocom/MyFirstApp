@@ -61,6 +61,8 @@ import { FormArticlesComponent } from './pages/purchase-list/form-articles/form-
 import { EmployeeFormComponent } from './pages/Employee/employee-form/employee-form.component';
 import { EmployeeListComponent } from './pages/Employee/employee-list/employee-list.component';
 import { EmployeeComponent } from './pages/Employee/employee.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimationSemaforoComponent } from './pages/animation-semaforo/animation-semaforo.component';
 
 registerLocaleData(localeEs);
 
@@ -113,14 +115,16 @@ registerLocaleData(localeEs);
     FormArticlesComponent,
     EmployeeFormComponent,
     EmployeeListComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    AnimationSemaforoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [{
     provide: LOCALE_ID, useValue: 'es-ES'
